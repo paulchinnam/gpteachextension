@@ -12,7 +12,7 @@ document.getElementById("addCard").addEventListener("click", function () {
           if (selectedText) {
             const encodedText = encodeURIComponent(selectedText);
             const url = `http://localhost:3000/add-card/?text=${encodedText}`;
-            window.open(url, "_blank");
+            window.open(url, "", "width=400, height=400");
             break; // We found text in one frame, no need to check further frames
           }
         }
